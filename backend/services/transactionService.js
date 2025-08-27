@@ -1,5 +1,5 @@
 const yayaApiService = require('./yayaApiService')
-const { generateSampleTransactions, generateSampleSearchResults } = require('../utils/sampleData')
+const { generateSampleTransactions, generateSampleSearchResults, getTotalSampleTransactions } = require('../utils/sampleData')
 const { PAGINATION, STATUS } = require('../config/constants')
 const Logger = require('../utils/logger')
 
@@ -27,7 +27,7 @@ class TransactionService {
       
       // Fallback to sample data
       const transactions = generateSampleTransactions(page, limit)
-      const totalTransactions = 150 // Simulate total count
+      const totalTransactions = getTotalSampleTransactions() // Use the new function
       const totalPages = Math.ceil(totalTransactions / limit)
       
       return {

@@ -49,7 +49,16 @@ const generateSampleSearchResults = (searchTerm, fields = ['sender', 'receiver',
   })
 }
 
+/**
+ * Get total number of sample transactions for pagination
+ * @returns {number} Total count
+ */
+const getTotalSampleTransactions = () => {
+  return 150 // Total number of sample transactions
+}
+
 module.exports = {
   generateSampleTransactions,
-  generateSampleSearchResults
+  generateSampleSearchResults,
+  getTotalSampleTransactions
 }
