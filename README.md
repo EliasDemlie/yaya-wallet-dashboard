@@ -88,21 +88,3 @@ A complete full-stack transaction management dashboard built with React and Node
    npm install
    npm run dev
    ```
-
-4. **Access the application**
-   - Frontend: http://localhost:5173
-   - Backend: http://localhost:5000
-
-## Configuration
-
-### Environment Variables
-
-**Backend** (`backend/.env`):
-
-```env
-API_KEY=your_yaya_wallet_api_key
-API_SECRET=your_yaya_wallet_api_secret
-PORT=5000
-NODE_ENV=development
-```
-
